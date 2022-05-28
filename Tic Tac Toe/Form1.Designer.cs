@@ -210,9 +210,9 @@
             this.LblTttNextMove.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblTttNextMove.Location = new System.Drawing.Point(7, 411);
             this.LblTttNextMove.Name = "LblTttNextMove";
-            this.LblTttNextMove.Size = new System.Drawing.Size(121, 26);
+            this.LblTttNextMove.Size = new System.Drawing.Size(112, 26);
             this.LblTttNextMove.TabIndex = 11;
-            this.LblTttNextMove.Text = "Next move:";
+            this.LblTttNextMove.Text = "Next turn:";
             this.LblTttNextMove.Click += new System.EventHandler(this.label1_Click);
             // 
             // LblTttTitle

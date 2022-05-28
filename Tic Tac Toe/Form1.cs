@@ -11,14 +11,14 @@ namespace Tic_Tac_Toe
         {
            
         }
-        //Initiating Button
+        //Initiating Button: Start - Play again - New Game
         private void BtnTttStart_Click(object sender, EventArgs e)
         {
             if ((BtnTttStart.Text == "Start Game!") ||
                 (BtnTttStart.Text == "Play Again!")
                )
             {
-                BtnTttStart.Text = "Finish!";
+                BtnTttStart.Text = "New Game!";
 
                 BtnTtt1.Enabled = true;
                 BtnTtt2.Enabled = true;
@@ -41,7 +41,7 @@ namespace Tic_Tac_Toe
                 BtnTtt9.Text = "";
 
             }
-            else if(BtnTttStart.Text == "Finish!")
+            else if(BtnTttStart.Text == "New Game!")
             {
                 BtnTttStart.Text = "Play Again!";
 
@@ -71,257 +71,86 @@ namespace Tic_Tac_Toe
         }
         
 
-        //Buttons Control
+        //Individual Control Buttons
         private void BtnTtt1_Click(object sender, EventArgs e)
         {
             BtnTttPlayer.Enabled = true;
             BtnTtt1.Text = BtnTttPlayer.Text;
+            BtnTtt1.Enabled = false;
             BtnTttPlayer.PerformClick();
             BtnTttPlayer.Enabled = false;
-            BtnTtt1.Enabled = false;
-
-
-            //Draw condition
-            if (
-                (BtnTttStart.Text == "Finish!") &&
-                (BtnTtt1.Enabled == false) &&
-                (BtnTtt2.Enabled == false) &&
-                (BtnTtt3.Enabled == false) &&
-                (BtnTtt4.Enabled == false) &&
-                (BtnTtt5.Enabled == false) &&
-                (BtnTtt6.Enabled == false) &&
-                (BtnTtt7.Enabled == false) &&
-                (BtnTtt8.Enabled == false) &&
-                (BtnTtt9.Enabled == false)
-               )
-            {
-                MessageBox.Show("Draw!");
-                BtnTttStart.PerformClick();
-            }
         }
 
         private void BtnTtt2_Click(object sender, EventArgs e)
         {
             BtnTttPlayer.Enabled = true;
             BtnTtt2.Text = BtnTttPlayer.Text;
+            BtnTtt2.Enabled = false;
             BtnTttPlayer.PerformClick();
             BtnTttPlayer.Enabled = false;
-            BtnTtt2.Enabled = false;
-
-
-            //Draw condition
-            if (
-                (BtnTttStart.Text == "Finish!") &&
-                (BtnTtt1.Enabled == false) &&
-                (BtnTtt2.Enabled == false) &&
-                (BtnTtt3.Enabled == false) &&
-                (BtnTtt4.Enabled == false) &&
-                (BtnTtt5.Enabled == false) &&
-                (BtnTtt6.Enabled == false) &&
-                (BtnTtt7.Enabled == false) &&
-                (BtnTtt8.Enabled == false) &&
-                (BtnTtt9.Enabled == false)
-               )
-            {
-                MessageBox.Show("Draw!");
-                BtnTttStart.PerformClick();
-            }
         }
 
         private void BtnTtt3_Click(object sender, EventArgs e)
         {
             BtnTttPlayer.Enabled = true;
             BtnTtt3.Text = BtnTttPlayer.Text;
+            BtnTtt3.Enabled = false;
             BtnTttPlayer.PerformClick();
             BtnTttPlayer.Enabled = false;
-            BtnTtt3.Enabled = false;
-
-
-            //Draw condition
-            if (
-                (BtnTttStart.Text == "Finish!") &&
-                (BtnTtt1.Enabled == false) &&
-                (BtnTtt2.Enabled == false) &&
-                (BtnTtt3.Enabled == false) &&
-                (BtnTtt4.Enabled == false) &&
-                (BtnTtt5.Enabled == false) &&
-                (BtnTtt6.Enabled == false) &&
-                (BtnTtt7.Enabled == false) &&
-                (BtnTtt8.Enabled == false) &&
-                (BtnTtt9.Enabled == false)
-               )
-            {
-                MessageBox.Show("Draw!");
-                BtnTttStart.PerformClick();
-            }
         }
 
         private void BtnTtt4_Click(object sender, EventArgs e)
         {
             BtnTttPlayer.Enabled = true;
             BtnTtt4.Text = BtnTttPlayer.Text;
+            BtnTtt4.Enabled = false;
             BtnTttPlayer.PerformClick();
             BtnTttPlayer.Enabled = false;
-            BtnTtt4.Enabled = false;
-
-
-            //Draw condition
-            if (
-                (BtnTttStart.Text == "Finish!") &&
-                (BtnTtt1.Enabled == false) &&
-                (BtnTtt2.Enabled == false) &&
-                (BtnTtt3.Enabled == false) &&
-                (BtnTtt4.Enabled == false) &&
-                (BtnTtt5.Enabled == false) &&
-                (BtnTtt6.Enabled == false) &&
-                (BtnTtt7.Enabled == false) &&
-                (BtnTtt8.Enabled == false) &&
-                (BtnTtt9.Enabled == false)
-               )
-            {
-                MessageBox.Show("Draw!");
-                BtnTttStart.PerformClick();
-            }
         }
 
         private void BtnTtt5_Click(object sender, EventArgs e)
         {
             BtnTttPlayer.Enabled = true;
             BtnTtt5.Text = BtnTttPlayer.Text;
+            BtnTtt5.Enabled = false;
             BtnTttPlayer.PerformClick();
             BtnTttPlayer.Enabled = false;
-            BtnTtt5.Enabled = false;
-
-
-            //Draw condition
-            if (
-                (BtnTttStart.Text == "Finish!") &&
-                (BtnTtt1.Enabled == false) &&
-                (BtnTtt2.Enabled == false) &&
-                (BtnTtt3.Enabled == false) &&
-                (BtnTtt4.Enabled == false) &&
-                (BtnTtt5.Enabled == false) &&
-                (BtnTtt6.Enabled == false) &&
-                (BtnTtt7.Enabled == false) &&
-                (BtnTtt8.Enabled == false) &&
-                (BtnTtt9.Enabled == false)
-               )
-            {
-                MessageBox.Show("Draw!");
-                BtnTttStart.PerformClick();
-            }
         }
 
         private void BtnTtt6_Click(object sender, EventArgs e)
         {
             BtnTttPlayer.Enabled = true;
             BtnTtt6.Text = BtnTttPlayer.Text;
+            BtnTtt6.Enabled = false;
             BtnTttPlayer.PerformClick();
             BtnTttPlayer.Enabled = false;
-            BtnTtt6.Enabled = false;
-
-
-            //Draw condition
-            if (
-                (BtnTttStart.Text == "Finish!") &&
-                (BtnTtt1.Enabled == false) &&
-                (BtnTtt2.Enabled == false) &&
-                (BtnTtt3.Enabled == false) &&
-                (BtnTtt4.Enabled == false) &&
-                (BtnTtt5.Enabled == false) &&
-                (BtnTtt6.Enabled == false) &&
-                (BtnTtt7.Enabled == false) &&
-                (BtnTtt8.Enabled == false) &&
-                (BtnTtt9.Enabled == false)
-               )
-            {
-                MessageBox.Show("Draw!");
-                BtnTttStart.PerformClick();
-            }
         }
 
         private void BtnTtt7_Click(object sender, EventArgs e)
         {
             BtnTttPlayer.Enabled = true;
             BtnTtt7.Text = BtnTttPlayer.Text;
+            BtnTtt7.Enabled = false;
             BtnTttPlayer.PerformClick();
             BtnTttPlayer.Enabled = false;
-            BtnTtt7.Enabled = false;
-
-
-            //Draw condition
-            if (
-                (BtnTttStart.Text == "Finish!") &&
-                (BtnTtt1.Enabled == false) &&
-                (BtnTtt2.Enabled == false) &&
-                (BtnTtt3.Enabled == false) &&
-                (BtnTtt4.Enabled == false) &&
-                (BtnTtt5.Enabled == false) &&
-                (BtnTtt6.Enabled == false) &&
-                (BtnTtt7.Enabled == false) &&
-                (BtnTtt8.Enabled == false) &&
-                (BtnTtt9.Enabled == false)
-               )
-            {
-                MessageBox.Show("Draw!");
-                BtnTttStart.PerformClick();
-            }
         }
 
         private void BtnTtt8_Click(object sender, EventArgs e)
         {
             BtnTttPlayer.Enabled = true;
             BtnTtt8.Text = BtnTttPlayer.Text;
+            BtnTtt8.Enabled = false;
             BtnTttPlayer.PerformClick();
             BtnTttPlayer.Enabled = false;
-            BtnTtt8.Enabled = false;
-
-
-            //Draw condition
-            if (
-                (BtnTttStart.Text == "Finish!") &&
-                (BtnTtt1.Enabled == false) &&
-                (BtnTtt2.Enabled == false) &&
-                (BtnTtt3.Enabled == false) &&
-                (BtnTtt4.Enabled == false) &&
-                (BtnTtt5.Enabled == false) &&
-                (BtnTtt6.Enabled == false) &&
-                (BtnTtt7.Enabled == false) &&
-                (BtnTtt8.Enabled == false) &&
-                (BtnTtt9.Enabled == false)
-               )
-            {
-                MessageBox.Show("Draw!");
-                BtnTttStart.PerformClick();
-            }
         }
 
         private void BtnTtt9_Click(object sender, EventArgs e)
         {
             BtnTttPlayer.Enabled = true;
             BtnTtt9.Text = BtnTttPlayer.Text;
+            BtnTtt9.Enabled = false;
             BtnTttPlayer.PerformClick();
             BtnTttPlayer.Enabled = false;
-            BtnTtt9.Enabled = false;
-
-
-            //Draw condition
-            if (
-                (BtnTttStart.Text == "Finish!") &&
-                (BtnTtt1.Enabled == false) &&
-                (BtnTtt2.Enabled == false) &&
-                (BtnTtt3.Enabled == false) &&
-                (BtnTtt4.Enabled == false) &&
-                (BtnTtt5.Enabled == false) &&
-                (BtnTtt6.Enabled == false) &&
-                (BtnTtt7.Enabled == false) &&
-                (BtnTtt8.Enabled == false) &&
-                (BtnTtt9.Enabled == false)
-               )
-            {
-                MessageBox.Show("Draw!");
-                BtnTttStart.PerformClick();
-            }
         }
 
        
@@ -329,6 +158,7 @@ namespace Tic_Tac_Toe
         {
             
         }
+        
         //Processing Button
         private void BtnTttPlayer_Click(object sender, EventArgs e)
         {
@@ -340,6 +170,7 @@ namespace Tic_Tac_Toe
             {
                 BtnTttPlayer.Text = "X";
             }
+           
             //Winning Conditions
             //Player 1
             if (
@@ -387,17 +218,35 @@ namespace Tic_Tac_Toe
                     if (byte.Parse(LblTttScore2.Text) >= 0)
                     {
                         LblTttScore2.Text = score2.ToString();
-                    }
-                
+                    }        
             }
-            //Next player to move
+            
+            //Draw condition
+            if (
+                (BtnTttStart.Text == "Finish!") &&
+                (BtnTtt1.Enabled == false) &&
+                (BtnTtt2.Enabled == false) &&
+                (BtnTtt3.Enabled == false) &&
+                (BtnTtt4.Enabled == false) &&
+                (BtnTtt5.Enabled == false) &&
+                (BtnTtt6.Enabled == false) &&
+                (BtnTtt7.Enabled == false) &&
+                (BtnTtt8.Enabled == false) &&
+                (BtnTtt9.Enabled == false)
+               )
+            {
+                MessageBox.Show("Draw!");
+                BtnTttStart.PerformClick();
+            }
+
+            //Next turn label
             if (BtnTttPlayer.Text == "X")
             {
-                LblTttNextMove.Text = "Next move: " + TbTttP1Nn.Text;
+                LblTttNextMove.Text = "Next turn: " + TbTttP1Nn.Text;
             }
             else if (BtnTttPlayer.Text == "O")
             {
-                LblTttNextMove.Text = "Next move: " + TbTttP2Nn.Text;
+                LblTttNextMove.Text = "Next turn: " + TbTttP2Nn.Text;
             }
         }
 
@@ -411,6 +260,7 @@ namespace Tic_Tac_Toe
 
         }
 
+        // Reset Score Button
         private void BtnTttResetScore_Click(object sender, EventArgs e)
         {
             byte reset = 0;
