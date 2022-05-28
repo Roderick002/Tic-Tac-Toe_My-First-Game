@@ -223,7 +223,7 @@ namespace Tic_Tac_Toe
             
             //Draw condition
             if (
-                (BtnTttStart.Text == "Finish!") &&
+                (BtnTttStart.Text == "New Game!") &&
                 (BtnTtt1.Enabled == false) &&
                 (BtnTtt2.Enabled == false) &&
                 (BtnTtt3.Enabled == false) &&
